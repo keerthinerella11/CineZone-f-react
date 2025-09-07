@@ -1,0 +1,138 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #eee;
+  padding: 0 20px 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 15px 20px;
+  border-bottom: 2px solid #333;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.site-caption {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a,
+.dropbtn {
+  background-color: transparent;
+  color: #eee;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.dropbtn:hover {
+  color: #00adb5;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  min-width: 150px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  z-index: 1;
+  border-radius: 4px;
+  top: 40px;
+}
+
+.dropdown-content a {
+  color: #eee;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 8px;
+  outline: none;
+  width: 160px;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  color: #00adb5;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #1c1c1c;
+  border-top: 2px solid #333;
+  color: #aaa;
+  margin-top: 40px;
+}
